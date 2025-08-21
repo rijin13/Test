@@ -2,19 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>3DTiler</title>
-
-    <!-- Meta refresh redirect (works in all browsers) -->
-    <meta http-equiv="refresh" content="0; url=./Test/" />
-
-    <!-- Optional JavaScript fallback -->
-    <script type="text/javascript">
-      window.location.href = "./Test/";
-    </script>
+    <title>3DTiler Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      main h1 {
+        font-size: 2.5rem;
+      }
+      .container {
+        max-width: 800px;
+      }
+      footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-top: 1px solid #dee2e6;
+        color: #6c757d;
+      }
+    </style>
   </head>
   <body>
-    <p>
-      If you are not redirected automatically, <a href="./Test/">click here</a>.
-    </p>
+    <div class="container">
+      <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+        <a
+          href="./Test/"
+          class="d-flex align-items-center text-dark text-decoration-none"
+        >
+          <img
+            src="./3dtiler.png"
+            alt="3DTiler Logo"
+            width="40"
+            height="40"
+            class="me-2"
+          />
+          <span class="fs-4">3DTiler</span>
+        </a>
+      </header>
+
+      <main>
+        <h1>3DTiler</h1>
+        <p>
+          The 3DTiler is a WebGIS-App to georeference 3D building models and
+          create 3D Tiles tilesets. It was developed for two research projects
+          of the University of Cologne and is part of a Bachelor thesis. In its
+          current state the 3DTiler is highly customized to the requirements and
+          data of the projects and therefore not universally usable.
+        </p>
+
+        <div class="mb-5">
+          <a href="./Test/" class="btn btn-primary btn-lg px-4">Start</a>
+        </div>
+
+        <hr class="mb-5" />
+
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h2>Virtual Campus</h2>
+            <p>
+              3DTiler is part of Virtual Campus, a project for web-based 3D
+              visualization and exploration in the context of research and
+              teaching at the University of Cologne.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2>Guides</h2>
+            <p>
+              Read more detailed instructions and documentation on using
+              3DTiler.
+            </p>
+            <ul>
+              <li><a href="#">Source Guide</a></li>
+              <li><a href="#">User Documentation</a></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer class="text-center">University of Cologne · &copy; 2025</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
